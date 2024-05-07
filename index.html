@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Açougue</title>
+<style>
+
+
+  /* Fundo gif*/
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .container {
+        max-width: 800px; 
+        margin: 50px auto; 
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5); /
+    }
+
+    .apresentacao {
+        margin-bottom: 20px;
+    }
+
+    .produtos img {
+    
+        width: 200px; 
+        height: auto;
+        cursor: pointer;
+    }
+
+   
+    .container {
+        text-align: left;
+        padding-bottom: 100px; 
+    }
+
+   
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px; /* Altura do rodapé */
+        background-color: transparent;
+    }
+
+
+
+
+
+/*menu*/
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+li {
+  float: right;
+
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+  
+}
+h1,p{
+  color: white;
+}
+
+
+h2{
+  color: yellow;
+  text-shadow: 4px 4px 4px white;
+  font-size: 30pt;
+  text-align: center;
+  font-family: verdana;
+  text-shadow: 3px 3px 3px red;
+}
+</style>
+</head>
+
+
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="carne.mp4" type="video/mp4">
+    </video>
+
+
+    <ul>
+        <img src="logo.png" width="80">
+              <li><a href="carne/index.html">Produtos</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Outros</a>
+                <div class="dropdown-content">
+                  <a href="Formulario/index.html">Contato</a>
+                  
+                </div>
+              </li>
+            </ul>
+
+    <div class="container">
+        <div class="apresentacao">
+            <h1>Bem-vindo ao açougue *Pé de Porco*</h1>
+            <p>Este açougue foi criado em 1973, com o objetivo de distribuir as carnes de melhor qualidade da região.
+               Nosso açougue é especializado em carne bovina e seus cortes mais nobres. Com mais de 50 anos de experiência 
+               no ramo, nossa equipe se dedica diariamente a selecionar os melhores fornecedores e garantir que apenas os cortes 
+               mais suculentos e saborosos cheguem até nossos clientes. Além disso, prezamos pela excelência no atendimento, buscando 
+               sempre superar as expectativas de quem nos visita. Estamos comprometidos em oferecer não apenas produtos de alta qualidade, 
+               mas também uma experiência de compra única e satisfatória. Seja para um churrasco em família ou para uma refeição especial, 
+               você pode confiar no nosso açougue para fornecer as melhores carnes bovinas da região, sempre frescas e de primeira qualidade. 
+               Compre e descubra o que nos torna o açougue de referência na cidade desde 1973.</p>
+         
+    <h2>Conheça nossos produtos!!!</h2>
+        <div class="produtos">
+            <a href="carne/index.html">
+                <img src="touro.png" alt="Produtos">
+            </a>
+        </div>
+    </div>
+
+   
+    <div class="footer"></div>
+</body>
+</html>
